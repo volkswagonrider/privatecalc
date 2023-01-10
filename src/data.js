@@ -1,4 +1,24 @@
 var loomians = {
+    harleclipse: {
+        name: "Harleclipse",
+        number: 00,
+        types: ["Dark", "Light"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 77,
+            energy: 85,
+            attack: 100,
+            defense: 69,
+            attackR: 100,
+            defenseR: 69,
+            speed: 100
+        }
+    },
+
     azulon: {
         name: "Azulon",
         number: 01,
@@ -18,7 +38,47 @@ var loomians = {
             speed: 44
         }
     },
+
+    azulon2ndevo: {
+        name: "Azulon2ndEvo",
+        number: 02,
+        types: ["Wood"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
     
+    azulon3rdevo: {
+        name: "Azulon3rdEvo",
+        number: 03,
+        types: ["Wood", "Spirit"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
     dragnir: {
         name: "Dragnir",
         number: 04,
@@ -36,6 +96,46 @@ var loomians = {
             attackR: 35,
             defenseR: 80,
             speed: 40
+        }
+    },
+
+    dragnir2ndevo: {
+        name: "Dragnir2ndEvo",
+        number: 05,
+        types: ["Earth"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    dragnir3rdevo: {
+        name: "Dragnir3rdEvo",
+        number: 06,
+        types: ["Earth", "Lightning"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
         }
     },
  
@@ -58,6 +158,46 @@ var loomians = {
             speed: 25
         }
     },
+
+    snartle2ndevo: {
+        name: "Snartle2ndEvo",
+        number: 08,
+        types: ["Water"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    snartle3rdevo: {
+        name: "Snartle3rdEvo",
+        number: 09,
+        types: ["Water", "Dark"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
     
     steeline: {
         name: "Steeline",
@@ -76,6 +216,46 @@ var loomians = {
             attackR: 26,
             defenseR: 36,
             speed: 80
+        }
+    },
+
+    steeline2ndevo: {
+        name: "Steeline2ndEvo",
+        number: 11,
+        types: ["Metal"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    steeline3rdevo: {
+        name: "Steeline3rdEvo",
+        number: 12,
+        types: ["Metal", "Air"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
         }
     },
     
@@ -99,23 +279,43 @@ var loomians = {
         }
     },
 
-    chikitsu: {
-        name: "Chikitsu",
-        number: 15,
-        types: ["Balance"],
-        abilities: ["Scout"],
-        sAbility: ["Wind Walker"],
+    conix2ndevo: {
+        name: "Conix2ndEvo",
+        number: 14,
+        types: ["Fire"],
+        abilities: [""],
+        sAbility: [""],
         finalEvo: false,
         weight: 00,
         height: 00,
         baseStats: {
-            hp: 54,
-            energy: 61,
-            attack: 50,
-            defense: 45,
-            attackR: 50,
-            defenseR: 45,
-            speed: 55
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    conix3rdevo: {
+        name: "Conix3rdEvo",
+        number: 15,
+        types: ["Fire", "Light"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
         }
     },
 
@@ -159,9 +359,189 @@ var loomians = {
         }
     },
 
+    guinmunch: {
+        name: "Guinmunch",
+        number: 18,
+        types: ["Balance"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    burglham: {
+        name: "Burglham",
+        number: 19,
+        types: ["Balance", "Dark"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    cubling: {
+        name: "Cubling",
+        number: 20,
+        types: ["Balance", "Wood"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 45,
+            energy: 65,
+            attack: 67,
+            defense: 67,
+            attackR: 28,
+            defenseR: 36,
+            speed: 42
+        }
+    },
+
+    cubling2ndevo: {
+        name: "Cubling2ndEvo",
+        number: 21,
+        types: ["Balance", "Wood"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    blubbish: {
+            name: "Blubbish",
+            number: 22,
+            types: ["Water"],
+            abilities: ["Puff Up"],
+            sAbility: ["Dampen"],
+            finalEvo: false,
+            weight: 00,
+            height: 00,
+            baseStats: {
+                hp: 41,
+                energy: 68,
+                attack: 62,
+                defense: 58,
+                attackR: 43,
+                defenseR: 41,
+                speed: 51
+            }
+        },
+    
+    blubbish2ndevo: {
+        name: "Blubbish2ndEvo",
+        number: 23,
+        types: ["Water"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    mutle: {
+        name: "Mutle",
+        number: 24,
+        types: ["Earth", "Insect"],
+        abilities: ["Exoskeleton"],
+        sAbility: ["Clamp"],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 47,
+            energy: 44,
+            attack: 29,
+            defense: 60,
+            attackR: 15,
+            defenseR: 51,
+            speed: 14
+        }
+    },
+
+    mutle2ndevo: {
+        name: "Mutle2ndEvo",
+        number: 25,
+        types: ["Earth", "Insect"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    mutle3rdevo: {
+        name: "Mutle3rdEvo",
+        number: 26,
+        types: ["Earth", "Insect"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
     nymon: {
         name: "Nymon",
-        number: 24,
+        number: 27,
         types: ["Insect"],
         abilities: ["Accelerate"],
         sAbility: ["Insectify"],
@@ -176,6 +556,46 @@ var loomians = {
             attackR: 60,
             defenseR: 28,
             speed: 57
+        }
+    },
+
+    Spagonfly: {
+        name: "Spagonfly",
+        number: 28,
+        types: ["Insect"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    Velocifly: {
+        name: "Velocifly",
+        number: 29,
+        types: ["Insect", "Sound"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
         }
     },
 
@@ -199,43 +619,263 @@ var loomians = {
         }
     },
 
-    blubbish: {
-        name: "Blubbish",
-        number: 22,
-        types: ["Water"],
-        abilities: ["Puff Up"],
-        sAbility: ["Dampen"],
+    cucommet: {
+        name: "Cucommet",
+        number: 31,
+        types: ["Insect", "Light"],
+        abilities: [""],
+        sAbility: [""],
         finalEvo: false,
         weight: 00,
         height: 00,
         baseStats: {
-            hp: 41,
-            energy: 68,
-            attack: 62,
-            defense: 58,
-            attackR: 43,
-            defenseR: 41,
-            speed: 51
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
         }
     },
 
-    mutle: {
-        name: "Mutle",
-        number: 24,
-        types: ["Earth", "Insect"],
-        abilities: ["Exoskeleton"],
-        sAbility: ["Clamp"],
+    megalluna: {
+        name: "Megalluna",
+        number: 32,
+        types: ["Insect", "Light"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    chikitsu: {
+        name: "Chikitsu",
+        number: 37,
+        types: ["Balance"],
+        abilities: ["Scout"],
+        sAbility: ["Wind Walker"],
         finalEvo: false,
         weight: 00,
         height: 00,
         baseStats: {
-            hp: 47,
-            energy: 44,
-            attack: 29,
-            defense: 60,
-            attackR: 15,
-            defenseR: 51,
-            speed: 14
+            hp: 54,
+            energy: 61,
+            attack: 50,
+            defense: 45,
+            attackR: 50,
+            defenseR: 45,
+            speed: 55
+        }
+    },
+
+    chiaura: {
+        name: "Chiaura",
+        number: 38,
+        types: ["Balance"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 85,
+            energy: 100,
+            attack: 80,
+            defense: 70,
+            attackR: 80,
+            defenseR: 70,
+            speed: 90
+        }
+    },
+
+    embaura: {
+        name: "Embaura",
+        number: 39,
+        types: ["Fire"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    oceaura: {
+        name: "Oceaura",
+        number: 40,
+        types: ["Water"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    blitzaura: {
+        name: "Blitzaura",
+        number: 41,
+        types: ["Lightning"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    terraura: {
+        name: "Terraura",
+        number: 42,
+        types: ["Earth"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    zephaura: {
+        name: "Zephaura",
+        number: 43,
+        types: ["Wind"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    duskaura: {
+        name: "Duskaura",
+        number: 44,
+        types: ["Dark"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    lumaura: {
+        name: "Lumaura",
+        number: 45,
+        types: ["Light"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    stelaura: {
+        name: "Stelaura",
+        number: 46,
+        types: ["Cosmic"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    glaslug: {
+        name: "Glaslug",
+        number: 50,
+        types: ["Water"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
         }
     },
 
@@ -319,6 +959,426 @@ var loomians = {
         }
     },
 
+    katoul: {
+        name: "Katoul",
+        number: 56,
+        types: ["Metal"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 62,
+            energy: 80,
+            attack: 72,
+            defense: 55,
+            attackR: 32,
+            defenseR: 42,
+            speed: 67
+        }
+    },
+
+    excaliard: {
+        name: "Excaliard",
+        number: 57,
+        types: ["Metal", "Light"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 102,
+            energy: 91,
+            attack: 92,
+            defense: 100,
+            attackR: 36,
+            defenseR: 52,
+            speed: 87
+        }
+    },
+
+    katamasa: {
+        name: "Katamasa",
+        number: 58,
+        types: ["Metal", "Dark"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 82,
+            energy: 91,
+            attack: 122,
+            defense: 70,
+            attackR: 36,
+            defenseR: 52,
+            speed: 107
+        }
+    },
+
+    centini: {
+        name: "Centini",
+        number: 59,
+        types: ["Insect", "Spirit"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    skelepede: {
+        name: "Skelepede",
+        number: 60,
+        types: ["Insect", "Spirit"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    gembat: {
+        name: "Gembat",
+        number: 61,
+        types: ["Earth"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    glamvania: {
+        name: "Glamvania",
+        number: 62,
+        types: ["Earth", "Sound"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    talingshi: {
+        name: "Talingshi",
+        number: 63,
+        types: ["Poison", "Earth"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    cralauch: {
+        name: "Cralauch",
+        number: 66,
+        types: ["Water", "Fire"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    craozhu: {
+        name: "Craozhu",
+        number: 67,
+        types: ["Water", "Fire"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    sparkey: {
+        name: "Sparkey",
+        number: 68,
+        types: ["Lightning"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    monma: {
+        name: "Monma",
+        number: 69,
+        types: ["Lightning", "Fire"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    komapup: {
+        name: "Komapup",
+        number: 72,
+        types: ["Earth"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    leodian: {
+        name: "Leodian",
+        number: 73,
+        types: ["Earth", "Mystic"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    obelinu: {
+        name: "Obelinu",
+        number: 74,
+        types: ["Earth", "Mystic"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    poise: {
+        name: "Poise",
+        number: 75,
+        types: ["Poison", "Spirit"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 18,
+            energy: 38,
+            attack: 27,
+            defense: 20,
+            attackR: 46,
+            defenseR: 18,
+            speed: 33
+        }
+    },
+
+    plagon: {
+        name: "Plagon",
+        number: 76,
+        types: ["Poison", "Spirit"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    lurrae: {
+        name: "Lurrae",
+        number: 77,
+        types: ["Metal", "Water"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    lurrae2ndevo: {
+        name: "Lurrae2ndEvo",
+        number: 78,
+        types: ["Metal", "Water"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    mochunny: {
+        name: "Mochunny",
+        number: 79,
+        types: ["Ice"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    dangora: {
+        name: "Dangora",
+        number: 80,
+        types: ["Ice", "Cosmic"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
     kraboo: {
         name: "Kraboo",
         number: 99,
@@ -358,6 +1418,268 @@ var loomians = {
             speed: 96
         }
     },
+
+    chester: {
+        name: "Chester",
+        number: 1000,
+        types: ["Dark", "Spirit"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 94,
+            energy: 78,
+            attack: 94,
+            defense: 100,
+            attackR: 63,
+            defenseR: 63,
+            speed: 88
+        }
+    },
+
+    zapri: {
+        name: "Zapri",
+        number: 000,
+        types: ["Cosmic", "Lightning"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    vigrace: {
+        name: "Vigrace",
+        number: 000,
+        types: ["Cosmic", "Ice"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    potaris: {
+        name: "Potaris",
+        number: 000,
+        types: ["Cosmic", "Water"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    impini: {
+        name: "Impini",
+        number: 000,
+        types: ["Cosmic", "Dark"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    oreus: {
+        name: "Oreus",
+        number: 000,
+        types: ["Cosmic", "Metal"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    ramies: {
+        name: "Ramies",
+        number: 000,
+        types: ["Cosmic", "Force"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    crubble: {
+        name: "Crubble",
+        number: 000,
+        types: ["Cosmic", "Earth"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    scoric: {
+        name: "Scoric",
+        number: 000,
+        types: ["Cosmic", "Poison"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    sagiflare: {
+        name: "Sagiflare",
+        number: 000,
+        types: ["Cosmic", "Fire"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    lilance: {
+        name: "Lilance",
+        number: 000,
+        types: ["Cosmic", "Metal"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    tetries: {
+        name: "Tetries",
+        number: 000,
+        types: ["Cosmic", "Mystic"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+    lumileo: {
+        name: "Lumileo",
+        number: 000,
+        types: ["Cosmic", "Light"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 00,
+            energy: 00,
+            attack: 00,
+            defense: 00,
+            attackR: 00,
+            defenseR: 00,
+            speed: 00
+        }
+    },
+
+   
 
     
 

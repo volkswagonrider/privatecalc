@@ -689,6 +689,15 @@ function loadSets(onlyFirst = false, onlySecond = false) {
         baseAtkR1.value = firstLoom.baseStats.attackR;
         baseDefR1.value = firstLoom.baseStats.defenseR;
         baseSpd1.value = firstLoom.baseStats.speed;
+        var needsbst = [];
+        for (let loom in loomians) {
+            if (loomians[loom].baseStats.energy == 00) {
+                console.log(loomians[loom].name);
+                needsbst.push(loomians[loom].name);
+            }
+        }
+        console.log(needsbst);
+        console.log(needsbst.length);
     }
 
     if (onlySecond || (!onlyFirst && !onlySecond)) {
@@ -1119,7 +1128,7 @@ function loadStats() {
     statSpd2.innerHTML = Math.floor(spd2 * multi);
     multi = 1;
 }
-
+//stat calculations
 function calculateStat(base, EV, level, isHP = false, posNat, negNat, veryNat, name, rest = false, isEnergy = false) {
     let stat;
 
@@ -1131,8 +1140,12 @@ function calculateStat(base, EV, level, isHP = false, posNat, negNat, veryNat, n
 
     if (isEnergy) {
        //2x HP =  stat =  Math.ceil((((2 * base) + (20 * EV) + 10) * level / 40 + 5) * 1.5) * 2;
-       stat = Math.ceil((((2 * base) + (20 * EV) + 10) * level / 40 + 5) * 2);
-        //LL stat = Math.floor(Math.floor(2 * base + Math.floor(EV / 4)) * level / 65 + 80);
+      //actual stat = Math.ceil((((2 * base) + (20 * EV) + 10) * level / 40 + 5) * 2);
+        stat = Math.ceil((((2 * base) + (20 * EV) + 10) * (level / 3 + 15) / 40 + 5) * 2); //testing
+       
+       
+       
+       //LL stat = Math.floor(Math.floor(2 * base + Math.floor(EV / 4)) * level / 65 + 80);
     }
     else {
         //console.log(((2 * base) + (10 * EV) + 10) * level / 100 + 5);
@@ -2717,7 +2730,7 @@ function getMultiplier(loom1, loom2, move, movePower, crit, level, ul = false, s
         }
         stuffUsed.ability1 = ability1;
     }
-    console.log(possibleDmg);
+    //console.log(possibleDmg);
     if (detailed) {
         for (let i = 0; i < possibleDmg.length; i++) {
        
