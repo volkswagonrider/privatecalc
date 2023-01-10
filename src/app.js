@@ -1141,7 +1141,7 @@ function calculateStat(base, EV, level, isHP = false, posNat, negNat, veryNat, n
     if (isEnergy) {
        //2x HP =  stat =  Math.ceil((((2 * base) + (20 * EV) + 10) * level / 40 + 5) * 1.5) * 2;
       //actual stat = Math.ceil((((2 * base) + (20 * EV) + 10) * level / 40 + 5) * 2);
-        stat = Math.ceil((((2 * base) + (20 * EV) + 10) * (level / 3 + 15) / 40 + 5) * 2); //testing
+        stat = Math.ceil((((2 * base) + (12.7 * EV) + 10) * (level / 3 + 15) / 40 + 5) * 2); //testing
        
        
        
