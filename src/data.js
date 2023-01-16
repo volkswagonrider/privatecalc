@@ -2345,4 +2345,4 @@ var relics = ["Trap Relic", "Remover Relic", "Pivot Relic"]
 
 var sets = [];
 
-var changelog = "Swirelle added to the calc.";
+var changelog = "bug fixes.";
