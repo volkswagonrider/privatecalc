@@ -369,13 +369,13 @@ var loomians = {
         weight: 00,
         height: 00,
         baseStats: {
-            hp: 00,
-            energy: 00,
-            attack: 00,
-            defense: 00,
-            attackR: 00,
-            defenseR: 00,
-            speed: 00
+            hp: 70,
+            energy: 60,
+            attack: 65,
+            defense: 60,
+            attackR: 25,
+            defenseR: 55,
+            speed: 25
         }
     },
 
@@ -389,13 +389,13 @@ var loomians = {
         weight: 00,
         height: 00,
         baseStats: {
-            hp: 00,
-            energy: 00,
-            attack: 00,
-            defense: 00,
-            attackR: 00,
-            defenseR: 00,
-            speed: 00
+            hp: 125,
+            energy: 95,
+            attack: 125,
+            defense: 75,
+            attackR: 30,
+            defenseR: 70,
+            speed: 20
         }
     },
 
@@ -559,7 +559,7 @@ var loomians = {
         }
     },
 
-    Spagonfly: {
+    spagonfly: {
         name: "Spagonfly",
         number: 28,
         types: ["Insect"],
@@ -569,17 +569,17 @@ var loomians = {
         weight: 00,
         height: 00,
         baseStats: {
-            hp: 00,
-            energy: 00,
-            attack: 00,
-            defense: 00,
-            attackR: 00,
-            defenseR: 00,
-            speed: 00
+            hp: 48,
+            energy: 68,
+            attack: 55,
+            defense: 45,
+            attackR: 76,
+            defenseR: 42,
+            speed: 76
         }
     },
 
-    Velocifly: {
+    velocifly: {
         name: "Velocifly",
         number: 29,
         types: ["Insect", "Sound"],
@@ -589,13 +589,13 @@ var loomians = {
         weight: 00,
         height: 00,
         baseStats: {
-            hp: 00,
-            energy: 00,
-            attack: 00,
-            defense: 00,
-            attackR: 00,
-            defenseR: 00,
-            speed: 00
+            hp: 68,
+            energy: 82,
+            attack: 69,
+            defense: 60,
+            attackR: 100,
+            defenseR: 62,
+            speed: 112
         }
     },
 
@@ -629,13 +629,13 @@ var loomians = {
         weight: 00,
         height: 00,
         baseStats: {
-            hp: 00,
-            energy: 00,
-            attack: 00,
-            defense: 00,
-            attackR: 00,
-            defenseR: 00,
-            speed: 00
+            hp: 80,
+            energy: 78,
+            attack: 26,
+            defense: 62,
+            attackR: 60,
+            defenseR: 72,
+            speed: 41
         }
     },
 
@@ -649,13 +649,13 @@ var loomians = {
         weight: 00,
         height: 00,
         baseStats: {
-            hp: 00,
-            energy: 00,
-            attack: 00,
-            defense: 00,
-            attackR: 00,
-            defenseR: 00,
-            speed: 00
+            hp: 100,
+            energy: 93,
+            attack: 32,
+            defense: 87,
+            attackR: 80,
+            defenseR: 105,
+            speed: 60
         }
     },
 
