@@ -49,13 +49,13 @@ var loomians = {
         weight: 00,
         height: 00,
         baseStats: {
-            hp: 00,
-            energy: 00,
-            attack: 00,
-            defense: 00,
-            attackR: 00,
-            defenseR: 00,
-            speed: 00
+            hp: 56,
+            energy: 84,
+            attack: 100,
+            defense: 65,
+            attackR: 43,
+            defenseR: 70,
+            speed: 52
         }
     },
     
@@ -99,8 +99,8 @@ var loomians = {
         }
     },
 
-    dragnir2ndevo: {
-        name: "Dragnir2ndEvo",
+    asgarok: {
+        name: "Asgarok",
         number: 05,
         types: ["Earth"],
         abilities: [""],
@@ -109,13 +109,13 @@ var loomians = {
         weight: 00,
         height: 00,
         baseStats: {
-            hp: 00,
-            energy: 00,
-            attack: 00,
-            defense: 00,
-            attackR: 00,
-            defenseR: 00,
-            speed: 00
+            hp: 68
+            energy: 85,
+            attack: 70,
+            defense: 44,
+            attackR: 55,
+            defenseR: 100,
+            speed: 48
         }
     },
 
@@ -169,13 +169,13 @@ var loomians = {
         weight: 00,
         height: 00,
         baseStats: {
-            hp: 00,
-            energy: 00,
-            attack: 00,
-            defense: 00,
-            attackR: 00,
-            defenseR: 00,
-            speed: 00
+            hp: 72,
+            energy: 87,
+            attack: 62,
+            defense: 110,
+            attackR: 65,
+            defenseR: 44,
+            speed: 30
         }
     },
 
@@ -229,13 +229,13 @@ var loomians = {
         weight: 00,
         height: 00,
         baseStats: {
-            hp: 00,
-            energy: 00,
-            attack: 00,
-            defense: 00,
-            attackR: 00,
-            defenseR: 00,
-            speed: 00
+            hp: 45,
+            energy: 80,
+            attack: 98,
+            defense: 55,
+            attackR: 42,
+            defenseR: 50,
+            speed: 100
         }
     },
 
@@ -289,13 +289,13 @@ var loomians = {
         weight: 00,
         height: 00,
         baseStats: {
-            hp: 00,
-            energy: 00,
-            attack: 00,
-            defense: 00,
-            attackR: 00,
-            defenseR: 00,
-            speed: 00
+            hp: 55,
+            energy: 78,
+            attack: 50,
+            defense: 50,
+            attackR: 100,
+            defenseR: 45,
+            speed: 92
         }
     },
 
@@ -349,13 +349,13 @@ var loomians = {
         weight: 00,
         height: 00,
         baseStats: {
-            hp: 48,
-            energy: 70,
-            attack: 95,
-            defense: 35,
+            hp: 60,
+            energy: 80,
+            attack: 100,
+            defense: 45,
             attackR: 90,
-            defenseR: 50,
-            speed: 100
+            defenseR: 70,
+            speed: 110
         }
     },
 
@@ -469,13 +469,13 @@ var loomians = {
         weight: 00,
         height: 00,
         baseStats: {
-            hp: 00,
-            energy: 00,
-            attack: 00,
-            defense: 00,
-            attackR: 00,
-            defenseR: 00,
-            speed: 00
+            hp: 89,
+            energy: 98,
+            attack: 70,
+            defense: 94,
+            attackR: 65,
+            defenseR: 82,
+            speed: 57
         }
     },
 
@@ -2345,4 +2345,4 @@ var relics = ["Trap Relic", "Remover Relic", "Pivot Relic"]
 
 var sets = [];
 
-var changelog = "bug fixes.";
+var changelog = "Added new kinalite stat spreads (STOPPED AT BLUBBISH)";
