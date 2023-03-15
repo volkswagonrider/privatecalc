@@ -669,7 +669,7 @@ function loadSets(onlyFirst = false, onlySecond = false) {
         veryNat1.value = (set1.veryNature == undefined ? "none" : set1.veryNature);
         abilityDropdown1.value = (set1.ability == undefined ? "none" : set1.ability);
         item1.value = (set1.item == undefined ? "none" : set1.item);
-        relic1.value = (set1.relic == undefined ? "none" : set1.relic);
+
         primaryTypeDropdown1.value = loomians[pokeDropdown1.value.toLowerCase()].types[0];
         secondaryTypeDropdown1.value = (loomians[pokeDropdown1.value.toLowerCase()].types[1] != undefined ? loomians[pokeDropdown1.value.toLowerCase()].types[1] : "None");
 
@@ -689,15 +689,6 @@ function loadSets(onlyFirst = false, onlySecond = false) {
         baseAtkR1.value = firstLoom.baseStats.attackR;
         baseDefR1.value = firstLoom.baseStats.defenseR;
         baseSpd1.value = firstLoom.baseStats.speed;
-        var needsbst = [];
-        for (let loom in loomians) {
-            if (loomians[loom].baseStats.energy == 00) {
-                console.log(loomians[loom].name);
-                needsbst.push(loomians[loom].name);
-            }
-        }
-        console.log(needsbst);
-        console.log(needsbst.length);
     }
 
     if (onlySecond || (!onlyFirst && !onlySecond)) {
@@ -735,8 +726,7 @@ function loadSets(onlyFirst = false, onlySecond = false) {
         veryNat2.value = (set2.veryNature == undefined ? "none" : set2.veryNature);
         abilityDropdown2.value = (set2.ability == undefined ? "none" : set2.ability);
         item2.value = (set2.item == undefined ? "none" : set2.item);
-        relic2.value = (set2.relic == undefined ? "none" : set2.relic);
-        
+
         primaryTypeDropdown2.value = loomians[pokeDropdown2.value.toLowerCase()].types[0];
         secondaryTypeDropdown2.value = (loomians[pokeDropdown2.value.toLowerCase()].types[1] != undefined ? loomians[pokeDropdown2.value.toLowerCase()].types[1] : "None");
 
@@ -824,7 +814,6 @@ function makeBlankSet(loomian) {
         veryNature: "none",
         ability: "None",
         item: "None",
-        relic: "None",
         level: 50
     }
     return set;
@@ -1128,7 +1117,7 @@ function loadStats() {
     statSpd2.innerHTML = Math.floor(spd2 * multi);
     multi = 1;
 }
-//stat calculations
+
 function calculateStat(base, EV, level, isHP = false, posNat, negNat, veryNat, name, rest = false, isEnergy = false) {
     let stat;
 
@@ -1140,12 +1129,8 @@ function calculateStat(base, EV, level, isHP = false, posNat, negNat, veryNat, n
 
     if (isEnergy) {
        //2x HP =  stat =  Math.ceil((((2 * base) + (20 * EV) + 10) * level / 40 + 5) * 1.5) * 2;
-      //actual stat = Math.ceil((((2 * base) + (20 * EV) + 10) * level / 40 + 5) * 2);
-        stat = Math.ceil((((2 * base) + (12.7 * EV) + 10) * (level / 3 + 15) / 40 + 5) * 2); //testing
-       
-       
-       
-       //LL stat = Math.floor(Math.floor(2 * base + Math.floor(EV / 4)) * level / 65 + 80);
+       stat = Math.ceil((((2 * base) + (20 * EV) + 10) * level / 40 + 5) * 2);
+        //LL stat = Math.floor(Math.floor(2 * base + Math.floor(EV / 4)) * level / 65 + 80);
     }
     else {
         //console.log(((2 * base) + (10 * EV) + 10) * level / 100 + 5);
@@ -2308,6 +2293,41 @@ function getMultiplier(loom1, loom2, move, movePower, crit, level, ul = false, s
         multi *= 1.1;
         stuffUsed.ability1 = ability1;
     }
+    else if (ability1 == "Winded" && tempType == "Balance") {
+        tempType = "Wind";
+        multi *= 1.25;
+        stuffUsed.ability1 = ability1;
+    }
+    else if (ability1 == "Shaded" && tempType == "Balance") {
+        tempType = "Dark";
+        multi *= 1.25;
+        stuffUsed.ability1 = ability1;
+    }
+    else if (ability1 == "Mudded" && tempType == "Balance") {
+        tempType = "Earth";
+        multi *= 1.25;
+        stuffUsed.ability1 = ability1;
+    }
+    else if (ability1 == "Ignited" && tempType == "Balance") {
+        tempType = "Fire";
+        multi *= 1.25;
+        stuffUsed.ability1 = ability1;
+    }
+    else if (ability1 == "Drenched" && tempType == "Balance") {
+        tempType = "Water";
+        multi *= 1.25;
+        stuffUsed.ability1 = ability1;
+    }
+    else if (ability1 == "Charged" && tempType == "Balance") {
+        tempType = "Lightning";
+        multi *= 1.25;
+        stuffUsed.ability1 = ability1;
+    }
+    else if (ability1 == "Star Struck" && tempType == "Balance") {
+        tempType = "Cosmic";
+        multi *= 1.25;
+        stuffUsed.ability1 = ability1;
+    }
     else if (ability1 == "Turbulent" && tempType == "Typeless") {
         tempType = "Air";
         multi *= 1.2;
@@ -2350,6 +2370,11 @@ function getMultiplier(loom1, loom2, move, movePower, crit, level, ul = false, s
 
     if ((ability1 == "Power Jaw" && move.bite == true) ||
        (ability1 == "Heavy Fists" && (move.punch == true || move.slap == true)) ||
+       (ability1 == "Demolitionist" && (move.explosive == true)) ||
+       (ability1 == "Fists of Fury" && (move.punch == true)) ||
+       (ability1 == "Mallet Master" && (move.hammer == true)) ||
+       (ability1 == "Muscular Maw" && (move.bite == true)) ||
+       (ability1 == "Musician" && (move.music == true)) ||
        (ability1 == "Guru" && tempPower <= 60 && powerCheck <= 60) ||
        (ability1 == "High Explosive" && move.bomb == true)) {
         multi *= 1.5;
@@ -2730,7 +2755,7 @@ function getMultiplier(loom1, loom2, move, movePower, crit, level, ul = false, s
         }
         stuffUsed.ability1 = ability1;
     }
-    //console.log(possibleDmg);
+    console.log(possibleDmg);
     if (detailed) {
         for (let i = 0; i < possibleDmg.length; i++) {
        
