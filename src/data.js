@@ -2069,7 +2069,7 @@ var moves = {
         type: "Metal",
         mr: "Melee",
         mr1: "Melee Attack",
-        mr2: "Melee Defense",
+        mr2: "Ranged Defense",
     },
                 
     metalMunch:{
@@ -2516,7 +2516,7 @@ var moves = {
     },
                 
     leafLaunch:{
-        name: "Leaf launch",
+        name: "Leaf Launch",
         power:  60,
         energy: 0,
         accuracy: 100,
@@ -2525,6 +2525,30 @@ var moves = {
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
     },
+
+    beatBash:{
+        name: "Beat Bash",
+        power:  60,
+        energy: 0,
+        accuracy: 100,
+        type: "Sound",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+    },
+
+    strike:{
+        name: "Strike",
+        power:  40,
+        energy: 0,
+        accuracy: 100,
+        type: "Balance",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+    },
+    
+    
 
     //Support Moves -----------------------------------------------------------------------------------------------------------------------------------------
 
@@ -3135,15 +3159,16 @@ var typeModAbilities = {
 //var items = ["Heavy Shield", "Heavy Armor", "Power Cuffs", "Health Amulet", "Drain Orb", "Mystic Wand", "Drop of Youth", "Energy Orb", "Chocolate Bar", "Mysterious Dust", "Heavy Shackles", "Thunder Orb",
          //    "Volcanic Ash", "Rageful Plushie", "Clutch Plushie", "Specialty Boots", "Milkshake", "Kabunga Coffee"];
 
-var items = ["Testing Item"]
+var items = ["Testing Item", "Power Gauntlet", "Power Fang"] //, "Soothing Leaf", "Metal Coat", "Mystic Scale", "Relaxed Herb", "Golden Lock"
 
-var relics = ["Trap Relic", "Remover Relic", "Pivot Relic"]
+var relics = ["Trap Relic", "Remover Relic", "Pivot Relic", "Terrain Relic"]
 //for (let ty in types) {
- //   items.push(ty.charAt(0).toUpperCase() + ty.slice(1) + " Essence");
-  //  items.push(types[ty].otherName.charAt(0).toUpperCase() + types[ty].otherName.slice(1) + " Pearl");
+     // items.push(ty.charAt(0).toUpperCase() + ty.slice(1) + " Bracelet");
+     // items.push(ty.charAt(0).toUpperCase() + ty.slice(1) + " Pendant");
+      //items.push(types[ty].otherName.charAt(0).toUpperCase() + types[ty].otherName.slice(1) + " Pearl");
   //  items.push(types[ty].otherName.charAt(0).toUpperCase() + types[ty].otherName.slice(1) + " Shell");
 //}
 
 var sets = [];
 
-var changelog = "added new moves, coded in some ability functionality";
+var changelog = "";
