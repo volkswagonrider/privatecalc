@@ -1075,7 +1075,9 @@ function loadStats() {
     if (ability1 == "Trash Armor" || ability1 == "Hard Candy") multi *= 1.5;
     if (ability1 == "Exoskeleton") multi *= 1.3;
     if (firstItem == "Drop of Youth" && firstLoom.finalEvo == false) multi *= 1.5;
+    if (firstItem == "Golden Lock" && firstLoom.finalEvo == false) multi *= 1.5;
     if (firstItem == "Heavy Armor") multi *= 1.2;
+    if (firstItem == "Metal Coat") multi *= 1.5;
     statDef1.innerHTML = Math.floor(def1 * multi);
     multi = 1;
     if (firstLoom.name == "Shawchi" && firstItem == "Mystic Wand") multi *= 1.5;
@@ -1083,7 +1085,9 @@ function loadStats() {
     multi = 1;
     if (ability1 == "Slick Shell") multi *= 2;
     if (firstItem == "Drop of Youth" && firstLoom.finalEvo == false) multi *= 1.5;
+    if (firstItem == "Golden Lock" && firstLoom.finalEvo == false) multi *= 1.5;
     if (firstItem == "Heavy Shield") multi *= 1.2;
+    if (firstItem == "Mystic Scale") multi *= 1.5;
     statDefR1.innerHTML = Math.floor(defR1 * multi);
     multi = 1;
     if (firstItem == "Specialty Boots") multi *= 1.5;
@@ -1098,8 +1102,10 @@ function loadStats() {
     statAtk2.innerHTML = Math.floor(atk2 * multi);
     multi = 1;
     if (ability2 == "Trash Armor" || ability2 == "Hard Candy" || (secondItem == "Drop of Youth" && secondLoom.finalEvo == false)) multi *= 1.5;
+    if (ability2 == "Trash Armor" || ability2 == "Hard Candy" || (secondItem == "Golden Lock" && secondLoom.finalEvo == false)) multi *= 1.5;
     if (ability2 == "Exoskeleton") multi *= 1.3;
     if (secondItem == "Heavy Armor") multi *= 1.2;
+    if (secondItem == "Metal Coat") multi *= 1.5;
     statDef2.innerHTML = Math.floor(def2 * multi);
     multi = 1;
     if (secondLoom.name == "Shawchi" && secondItem == "Mystic Wand") multi *= 1.5;
@@ -1107,7 +1113,9 @@ function loadStats() {
     multi = 1;
     if (ability2 == "Slick Shell") multi *= 2;
     if (secondItem == "Drop of Youth" && secondLoom.finalEvo == false) multi *= 1.5;
+    if (secondItem == "Golden Lock" && secondLoom.finalEvo == false) multi *= 1.5;
     if (secondItem == "Heavy Shield") multi *= 1.2;
+    if (secondItem == "Mystic Scale") multi *= 1.5;
     statDefR2.innerHTML = Math.floor(defR2 * multi);
     multi = 1;
     if (secondItem == "Specialty Boots") multi *= 1.5;
@@ -1131,6 +1139,7 @@ function calculateStat(base, EV, level, isHP = false, posNat, negNat, veryNat, n
        //2x HP =  stat =  Math.ceil((((2 * base) + (20 * EV) + 10) * level / 40 + 5) * 1.5) * 2;
        stat = Math.ceil((((2 * base) + (20 * EV) + 10) * level / 40 + 5) * 2);
         //LL stat = Math.floor(Math.floor(2 * base + Math.floor(EV / 4)) * level / 65 + 80);
+        //CMHERE
     }
     else {
         //console.log(((2 * base) + (10 * EV) + 10) * level / 100 + 5);
@@ -1405,9 +1414,22 @@ function checkEnergy(moveOne1, moveTwo1, moveThree1, moveFour1, moveOne2, moveTw
             }
         }
     }
+    else if (itemA == "Power Gauntlet") {
+        for (let i = 0; i < 4; i++) {
+            if (moves1[i].mr != "Support") {
+                movesEnergy1[i] = movesEnergy1[i] * 1.2;
+            }
+        }
+    }
     else if (itemA == "Heavy Armor" || itemA == "Heavy Shield") {
         for (let i = 0; i < 4; i++) {
             movesEnergy1[i] = movesEnergy1[i] * 1.15;
+        }
+    }
+
+    else if (itemA == "Metal Coat" || itemA == "Mystic Scale") {
+        for (let i = 0; i < 4; i++) {
+            movesEnergy1[i] = movesEnergy1[i] * 1.1;
         }
     }
 
@@ -1450,9 +1472,22 @@ function checkEnergy(moveOne1, moveTwo1, moveThree1, moveFour1, moveOne2, moveTw
             }
         }
     }
+    else if (itemB == "Power Gauntlet") {
+        for (let i = 0; i < 4; i++) {
+            if (moves2[i].mr != "Support") {
+                movesEnergy2[i] = movesEnergy2[i] * 1.2;
+            }
+        }
+    }
     else if (itemB == "Heavy Armor" || itemB == "Heavy Shield") {
         for (let i = 0; i < 4; i++) {
             movesEnergy2[i] = movesEnergy2[i] * 1.15;
+        }
+    }
+
+    else if (itemB == "Metal Coat" || itemB == "Mystic Scale") {
+        for (let i = 0; i < 4; i++) {
+            movesEnergy2[i] = movesEnergy2[i] * 1.1;
         }
     }
     
@@ -2260,7 +2295,7 @@ function getMultiplier(loom1, loom2, move, movePower, crit, level, ul = false, s
 
    // dmg = Math.floor(2 * level / 5) + 2;
     dmg = 2 * level / 5 + 2;
-    
+    //CMHERE
     //Power ----------------------------------------
 
     if (typeModAbility1 != undefined && tempType == typeModAbility1.typeModifier.type && typeModAbility1.powerMod == true) {
@@ -2406,8 +2441,19 @@ function getMultiplier(loom1, loom2, move, movePower, crit, level, ul = false, s
 
     if ((move.name == "Gloominous Roar" && loom1.name == "Tiklipse" && ability1 != "Circadian" && itemA.includes("Light")) ||
        (itemA.includes(tempType) && itemA.includes("Essence")) ||
+       (itemA.includes(tempType) && itemA.includes("Bracelet")) ||
        (itemA == "Power Cuffs")) {
         multi *= 1.2;
+        stuffUsed.item1 = itemA;
+    }
+
+    if ((itemA == "Power Gauntlet")) {
+        multi *= 1.3;
+        stuffUsed.item1 = itemA;
+    }
+
+    if ((itemA == "Power Fang" && move.mr1 == "Melee Attack")) {
+        multi *= 1.1;
         stuffUsed.item1 = itemA;
     }
 
@@ -2486,6 +2532,7 @@ function getMultiplier(loom1, loom2, move, movePower, crit, level, ul = false, s
     }
     if ((ability1 == "Hasty" && move.mr1 == "Melee Attack") ||
        (ability1 == "Vigorous" && stat1 != "healthy" && move.mr1 == "Melee Attack") ||
+       (ability1 == "Bluff" && stat1 != "healthy" && move.mr1 == "Melee Attack") ||
       // (dawn && isDouble && move.mr1 == "Melee Attack" && ability1 == "Dusk") ||
        //(dawn && isDouble && move.mr1 == "Ranged Attack" && ability1 == "Dawn") ||
        (move.mr1 == "Melee Defense" && ability1 == "Trash Armor")) {
@@ -2501,19 +2548,25 @@ function getMultiplier(loom1, loom2, move, movePower, crit, level, ul = false, s
             multi *= 1.2;
             stuffUsed.item1 = itemA;
     }
+    if ((move.mr1 == "Melee Defense" && itemA == "Metal Coat") ||
+       (move.mr1 == "Ranged Defense" && itemA == "Mystic Scale")) {
+            multi *= 1.5;
+            stuffUsed.item1 = itemA;
+    }
     if (move.mr1 == "Ranged Defense" && ability1 == "Slick Shell") {
         multi *= 2;
         stuffUsed.ability1 = ability1
     }
     if ((itemA == "Mystic Wand" && loom1.name == "Shawchi" && move.mr1 == "Ranged Attack") ||
-        (itemA == "Drop of Youth" && loom1.finalEvo == false && (move.mr1 == "Melee Defense" || move.mr1 == "Ranged Defense"))) {
+        (itemA == "Drop of Youth" && loom1.finalEvo == false && (move.mr1 == "Melee Defense" ||  move.mr1 == "Ranged Defense")) ||
+        (itemA == "Golden Lock" && loom1.finalEvo == false && (move.mr1 == "Melee Defense" ||  move.mr1 == "Ranged Defense"))) {
         multi *= 1.5;
         stuffUsed.item1 = itemA;
     }
 
     tempAtk.atk = pokeRound(tempAtk.atk * multi);
     multi = 1;
-
+    console.log(possibleDmg);
     //Defense ----------------------------------------------------
 
     if (crit && tempDef.stage > 0) {
@@ -2529,7 +2582,16 @@ function getMultiplier(loom1, loom2, move, movePower, crit, level, ul = false, s
         multi *= 1.2;
         stuffUsed.item2 = itemB;
     }
+    if ((itemB == "Mystic Scale" && (move.mr2 == "Ranged Defense" || adaptive.mr2 == "Ranged Defense")) ||
+       (itemB == "Metal Coat" && move.mr2 == "Melee Defense" & adaptive.mr2 != "Ranged Defense")) {
+        multi *= 1.5;
+        stuffUsed.item2 = itemB;
+    }
     if (itemB == "Drop of Youth" && loom2.finalEvo == false) {
+        multi *= 1.5;
+        stuffUsed.item2 = itemB;
+    }
+    if (itemB == "Golden Lock" && loom2.finalEvo == false) {
         multi *= 1.5;
         stuffUsed.item2 = itemB;
     }
@@ -2550,15 +2612,15 @@ function getMultiplier(loom1, loom2, move, movePower, crit, level, ul = false, s
     multi = 1;
 
     //dmg = Math.floor(Math.floor(dmg * tempAtk.atk * tempPower/ tempDef.def ) / 50) + 2;
-    dmg = dmg * tempAtk.atk * tempPower / tempDef.def  / 50 + 2;
+    dmg = dmg * tempAtk.atk * tempPower / tempDef.def  / (level/50*1.5 + 40) + 2;
     if (isDouble && move.aoe == true) {
         multi *= 0.75;
     }
-
+//CMHERE
     dmg *= multi;
     //dmg = Math.floor(dmg * multi);
     multi = 1;
-
+    console.log(dmg);
     //Crit and Random -----------------------------
 
     if (crit) {
@@ -2579,7 +2641,7 @@ function getMultiplier(loom1, loom2, move, movePower, crit, level, ul = false, s
            possibleDmg.push(dmg * multi * i/255);
         }
     }
-    //console.log(possibleDmg)
+    console.log(possibleDmg)
    // dmg = Math.floor(dmg * multi);
     dmg *= multi;
     multi = 1;
@@ -2612,7 +2674,7 @@ function getMultiplier(loom1, loom2, move, movePower, crit, level, ul = false, s
   //  dmg = Math.floor(dmg * multi);
     dmg *= multi;
     multi = 1;
-
+    //console.log(possibleDmg);
     //Type -------------------------------
 
     if((ability1 == "Devious") || 
@@ -2693,7 +2755,7 @@ function getMultiplier(loom1, loom2, move, movePower, crit, level, ul = false, s
            possibleDmg[i] = possibleDmg[i] * multi;
         }
     }
-   
+   //console.log(possibleDmg);
   //  console.log(multi);
     //dmg = Math.floor(dmg * multi);
     dmg *= multi;
@@ -2701,7 +2763,7 @@ function getMultiplier(loom1, loom2, move, movePower, crit, level, ul = false, s
 
     //Status ------------------------
 
-    if (stat1 == "burned" && move.mr == "Melee" && move.name != "Ill Will" && ability1 != "Vigorous" && ability1 != "Aqua Body" && types1.primary != "Fire" && types1.secondary != "Fire") {
+    if (stat1 == "burned" && move.mr == "Melee" && move.name != "Ill Will" && ability1 != "Vigorous" && ability1 != "Bluff" && ability1 != "Aqua Body" && types1.primary != "Fire" && types1.secondary != "Fire") {
         multi *= 0.5;
     }
 
@@ -2725,7 +2787,15 @@ function getMultiplier(loom1, loom2, move, movePower, crit, level, ul = false, s
         multi *= 0.5;
         stuffUsed.ability2 = ability2;
     }
+    if (ability2 == "Preparation" && btl1 && withoutSlapDown && !foulHit) {
+        multi *= 0.5;
+        stuffUsed.ability2 = ability2;
+    }
     if (tempType != "Null" && itemB.includes(types[tempType.toLowerCase()].otherName.charAt(0).toUpperCase() + types[tempType.toLowerCase()].otherName.slice(1)) && itemB.includes("Pearl") && withoutSlapDown && !foulHit) {
+        multi *= 0.5;
+        stuffUsed.item2 = itemB;
+    } 
+    if (tempType != "Null" && itemB.includes(tempType) && itemB.includes("Pendant") && withoutSlapDown && !foulHit) {
         multi *= 0.5;
         stuffUsed.item2 = itemB;
     }
@@ -2744,6 +2814,7 @@ function getMultiplier(loom1, loom2, move, movePower, crit, level, ul = false, s
     //if (move.grounded && loom2.levitate && !smacked) multi *= 0;
 
     stuffUsed.item2 = (itemB == "Health Amulet" ? itemB : stuffUsed.item2);
+    stuffUsed.item2 = (itemB == "Soothing Leaf" ? itemB : stuffUsed.item2);
 
     if (ability1 == "Double Strike" && !foulHit && !(isDouble && move.aoe == true) && !move.hits) {
         if (detailed) {
@@ -2755,7 +2826,7 @@ function getMultiplier(loom1, loom2, move, movePower, crit, level, ul = false, s
         }
         stuffUsed.ability1 = ability1;
     }
-    console.log(possibleDmg);
+   // console.log(possibleDmg); VISIT HERE
     if (detailed) {
         for (let i = 0; i < possibleDmg.length; i++) {
        
@@ -3067,6 +3138,17 @@ function adjustHP(loom1, loom2, hp1, hp2, item, ability, status, second = false,
             }
            
             hazardString += "health amulet recovery and ";
+        }
+
+        if (item == "Soothing Leaf") {
+            
+            if (ability == "Sapper") {
+                newHP -= Math.floor(hp1 * 1 / 16 * 1.25);
+            } else {
+                newHP -= Math.floor(hp1 * 1 / 16);
+            }
+           
+            hazardString += "soothing leaf recovery and ";
         }
     }
 
