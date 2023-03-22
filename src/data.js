@@ -3159,7 +3159,7 @@ var typeModAbilities = {
 //var items = ["Heavy Shield", "Heavy Armor", "Power Cuffs", "Health Amulet", "Drain Orb", "Mystic Wand", "Drop of Youth", "Energy Orb", "Chocolate Bar", "Mysterious Dust", "Heavy Shackles", "Thunder Orb",
          //    "Volcanic Ash", "Rageful Plushie", "Clutch Plushie", "Specialty Boots", "Milkshake", "Kabunga Coffee"];
 
-var items = ["Testing Item", "Power Gauntlet", "Power Fang"] //, "Soothing Leaf", "Metal Coat", "Mystic Scale", "Relaxed Herb", "Golden Lock"
+var items = ["Testing Item", "Power Gauntlet", "Power Fang", "Golden Lock"] //, "Soothing Leaf", "Metal Coat", "Mystic Scale", "Relaxed Herb"
 
 var relics = ["Trap Relic", "Remover Relic", "Pivot Relic", "Terrain Relic"]
 //for (let ty in types) {
