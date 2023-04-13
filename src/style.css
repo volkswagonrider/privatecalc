@@ -125,6 +125,10 @@ hr {
   height: 65%;
 }
 
+.terrains {
+  height: 7%;
+}
+
 #title {
   background-color: rgb(129, 134, 143);
   border: solid black;
