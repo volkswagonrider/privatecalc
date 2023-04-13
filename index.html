@@ -25,7 +25,7 @@
             <div>
                 <input class="hiddenToUser" type="radio" id="moveOneRadio1" name="moveResult" checked="checked" onchange="update()">
                 <label class="resultlbl" id="moveOneLbl1" for="moveOneRadio1">
-                    Blizzard
+                    Wind Claw
                 </label>
                 <span id="moveOneDmg1">65-75%</span>
             </div>
@@ -33,7 +33,7 @@
             <div>
                 <input class="hiddenToUser" type="radio" id="moveTwoRadio1" name="moveResult" onchange="update()">
                 <label class="resultlbl" id="moveTwoLbl1" for="moveTwoRadio1">
-                    Flamethrower
+                    Water Whack
                 </label>
                 <span id="moveTwoDmg1">65-50%</span>
             </div>
@@ -41,7 +41,7 @@
             <div>
                 <input class="hiddenToUser" type="radio" id="moveThreeRadio1" name="moveResult" onchange="update()">
                 <label class="resultlbl" id="moveThreeLbl1" for="moveThreeRadio1">
-                    Mud Buck
+                    Spooky Slap
                 </label>
                 <span id="moveThreeDmg1">53-34%</span>
             </div>
@@ -49,7 +49,7 @@
             <div>
                 <input class="hiddenToUser" type="radio" id="moveFourRadio1" name="moveResult" onchange="update()">
                 <label class="resultlbl" id="moveFourLbl1" for="moveFourRadio1">
-                    Searing Steel
+                    Slime Slap
                 </label>
                 <span id="moveFourDmg1">32% - 54%</span>
             </div>
@@ -61,7 +61,7 @@
             <div>
                 <input class="hiddenToUser" type="radio" id="moveOneRadio2" name="moveResult" onchange="update()">
                 <label class="resultlbl" id="moveOneLbl2" for="moveOneRadio2">
-                    Blizzard
+                    Wind Claw
                 </label>
                 <span id="moveOneDmg2">65-75%</span>
             </div>
@@ -69,7 +69,7 @@
             <div>
                 <input class="hiddenToUser" type="radio" id="moveTwoRadio2" name="moveResult" onchange="update()">
                 <label class="resultlbl" id="moveTwoLbl2" for="moveTwoRadio2">
-                    Flamethrower
+                    Water Whack
                 </label>
                 <span id="moveTwoDmg2">65-50%</span>
             </div>
@@ -77,7 +77,7 @@
             <div>
                 <input class="hiddenToUser" type="radio" id="moveThreeRadio2" name="moveResult" onchange="update()">
                 <label class="resultlbl" id="moveThreeLbl2" for="moveThreeRadio2">
-                    Mud Buck
+                    Spooky Slap
                 </label>
                 <span id="moveThreeDmg2">53-34%</span>
             </div>
@@ -85,7 +85,7 @@
             <div>
                 <input class="hiddenToUser" type="radio" id="moveFourRadio2" name="moveResult" onchange="update()">
                 <label class="resultlbl" id="moveFourLbl2" for="moveFourRadio2">
-                    Searing Steel
+                    Slime Slap
                 </label>
                 <span id="moveFourDmg2">32% - 54%</span>
             </div>
@@ -445,7 +445,7 @@
                             <option value="healthy">Healthy</option>
                             <option value="paralasis">Paralyzed</option>
                             <option value="burned">Burned</option>
-                            <option value="frozen">Frostbite</option>
+                            <option value="frostbitten">Frostbitten</option>
                             <option value="poisoned">Poisoned</option>
                             <option value="asleep">Asleep</option>
                         </select>
@@ -552,7 +552,65 @@
                     <input type="checkbox" class="hiddenToUser" id="levelCheck" onchange="updateLevel()">
                     <label class="radiolbl fieldlbl icetrap" for="levelCheck" title="Current level cap: 10">Level 10</label>
                 </div>
-
+                <hr>
+        
+            
+                        <div class="terrains">
+                            <div align="center">
+                               <label class="mid">Current Terrain</label>
+                            </div>
+                            
+                            <div class="left">
+                                
+                                <select title="Select the current terrain" id="terrain1" onchange="updateLevel()">
+                                    <option>None</option>
+                                    <option>Wicked Weeds</option>
+                                    <option>Earth Veil</option>
+                                    <option>Water Wall</option>
+                                    <option>Fire Thing</option>
+                                    <option>Metal Thing</option>
+                                    <option>Jet Stream</option>
+                                    <option>Smog</option>
+                                    <option>Snowstorm</option>
+                                    <option>Thunderstorm</option>
+                                    <option>Force Thing</option>
+                                    <option>Dark Thing</option>
+                                    <option>Light Thing</option>
+                                    <option>Spirit Thing</option>
+                                    <option>Cosmic Thing</option>
+                                    <option>Balance Thing</option>
+                                    <option>Insect Thing</option>
+                                    <option>Mystic Thing</option>
+                                    <option>Sound Thing</option>
+                                </select>
+                                
+                            </div>
+    
+                            <div class="right">
+                                <select title="Select the current terrain" id="terrain2" onchange="updateLevel()">
+                                    <option>None</option>
+                                    <option>Wicked Weeds</option>
+                                    <option>Earth Veil</option>
+                                    <option>Water Wall</option>
+                                    <option>Fire Thing</option>
+                                    <option>Metal Thing</option>
+                                    <option>Jet Stream</option>
+                                    <option>Smog</option>
+                                    <option>Snowstorm</option>
+                                    <option>Thunderstorm</option>
+                                    <option>Force Thing</option>
+                                    <option>Dark Thing</option>
+                                    <option>Light Thing</option>
+                                    <option>Spirit Thing</option>
+                                    <option>Cosmic Thing</option>
+                                    <option>Balance Thing</option>
+                                    <option>Insect Thing</option>
+                                    <option>Mystic Thing</option>
+                                    <option>Sound Thing</option>
+                                </select>
+                            </div>
+                        </div>
+                  
                 <hr>
                 <div class="fieldTraps">
                      <div>
@@ -587,6 +645,8 @@
                             <input type="checkbox" class="hiddenToUser" id="buzzolen2" onchange="update()">
                             <label class="radiolbl fieldlbl entered" for="buzzolen2" title="Was this side bitten by Mutle?">Bitten by Mutle</label>
                         </div>
+
+                        
                     </div>
                     
                      <div>
@@ -1047,7 +1107,7 @@
                             <option value="healthy">Healthy</option>
                             <option value="paralasis">Paralyzed</option>
                             <option value="burned">Burned</option>
-                            <option value="frozen">Frostbite</option>
+                            <option value="frostbitten">Frostbitten</option>
                             <option value="poisoned">Poisoned</option>
                             <option value="asleep">Asleep</option>
                         </select>
