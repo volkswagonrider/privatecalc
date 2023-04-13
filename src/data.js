@@ -112,10 +112,10 @@ var loomians = {
             hp: 68,
             energy: 85,
             attack: 70,
-            defense: 44,
+            defense: 53,
             attackR: 55,
-            defenseR: 100,
-            speed: 48
+            defenseR: 95,
+            speed: 44
         }
     },
 
@@ -459,8 +459,8 @@ var loomians = {
             }
         },
     
-    blubbish2ndevo: {
-        name: "Blubbish2ndEvo",
+    koimari: {
+        name: "Koimari",
         number: 23,
         types: ["Water"],
         abilities: ["Current Catcher"],
@@ -519,25 +519,7 @@ var loomians = {
         }
     },
 
-    mutle3rdevo: {
-        name: "Mutle3rdEvo",
-        number: 26,
-        types: ["Earth", "Insect"],
-        abilities: ["Armored"],
-        sAbility: ["Determination"],
-        finalEvo: true,
-        weight: 00,
-        height: 00,
-        baseStats: {
-            hp: 100,
-            energy: 85,
-            attack: 105,
-            defense: 115,
-            attackR: 41,
-            defenseR: 50,
-            speed: 34
-        }
-    },
+    
 
     nymon: {
         name: "Nymon",
@@ -809,12 +791,12 @@ var loomians = {
         weight: 00,
         height: 00,
         baseStats: {
-            hp: 80,
-            energy: 100,
-            attack: 60,
-            defense: 110,
-            attackR: 50,
-            defenseR: 70,
+            hp: 100,
+            energy: 80,
+            attack: 50,
+            defense: 70,
+            attackR: 60,
+            defenseR: 110,
             speed: 90
         }
     },
@@ -1000,6 +982,108 @@ var loomians = {
         }
     },
 
+    palpup: {
+        name: "Palpup",
+        number: 55,
+        types: ["Balance"],
+        abilities: ["Botanist"],
+        sAbility: ["Night Owl"],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 55,
+            energy: 50,
+            attack: 55,
+            defense: 50,
+            attackR: 50,
+            defenseR: 55,
+            speed: 50
+        }
+    },
+
+    alliogo: {
+        name: "Alliogo",
+        number: 56,
+        types: ["Balance"],
+        abilities: ["Botanist"],
+        sAbility: ["Night Owl"],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 70,
+            energy: 68,
+            attack: 70,
+            defense: 60,
+            attackR: 65,
+            defenseR: 62,
+            speed: 75
+        }
+    },
+
+    accanine: {
+        name: "Accanine",
+        number: 57,
+        types: ["Balance", "Mystic"],
+        abilities: ["Botanist"],
+        sAbility: ["Night Owl"],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 80,
+            energy: 75,
+            attack: 90,
+            defense: 75,
+            attackR: 85,
+            defenseR: 80,
+            speed: 85
+        }
+    },
+
+    rafrock: {
+        name: "Rafrock",
+        number: 58,
+        types: ["Earth"],
+        abilities: ["Botanist"],
+        sAbility: ["Night Owl"],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 55,
+            energy: 60,
+            attack: 65,
+            defense: 55,
+            attackR: 60,
+            defenseR: 55,
+            speed: 50
+        }
+    },
+
+    giraterra: {
+        name: "Giraterra",
+        number: 59,
+        types: ["Earth"],
+        abilities: ["Botanist"],
+        sAbility: ["Night Owl"],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 110,
+            energy: 80,
+            attack: 90,
+            defense: 74,
+            attackR: 85,
+            defenseR: 74,
+            speed: 62
+        }
+    },
+
+    
+
     katoul: {
         name: "Katoul",
         number: 56,
@@ -1080,8 +1164,8 @@ var loomians = {
         }
     },
 
-    skelepede: {
-        name: "Skelepede",
+    calcipede: {
+        name: "Calcipede",
         number: 60,
         types: ["Insect", "Spirit"],
         abilities: ["Frightening"],
@@ -1200,6 +1284,46 @@ var loomians = {
         }
     },
 
+    lamplit: {
+        name: "Lamplit",
+        number: 66,
+        types: ["Spirit", "Fire"],
+        abilities: ["Demolitionist"],
+        sAbility: ["Exoskeleton"],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 53,
+            energy: 62,
+            attack: 75,
+            defense: 38,
+            attackR: 35,
+            defenseR: 49,
+            speed: 58
+        }
+    },
+
+    phantern: {
+        name: "Phantern",
+        number: 67,
+        types: ["Spirit", "Fire"],
+        abilities: ["Demolitionist"],
+        sAbility: ["Exoskeleton"],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 85,
+            energy: 86,
+            attack: 121,
+            defense: 60,
+            attackR: 45,
+            defenseR: 78,
+            speed: 85
+        }
+    },
+
     sparkey: {
         name: "Sparkey",
         number: 68,
@@ -1237,6 +1361,26 @@ var loomians = {
             attackR: 50,
             defenseR: 68,
             speed: 125
+        }
+    },
+
+    steedknight: {
+        name: "Steedknight",
+        number: 60,
+        types: ["Balance", "Metal"],
+        abilities: ["Bluff"],
+        sAbility: ["Preparation"],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 94,
+            energy: 80,
+            attack: 95,
+            defense: 90,
+            attackR: 32,
+            defenseR: 90,
+            speed: 88
         }
     },
 
@@ -1380,6 +1524,107 @@ var loomians = {
         }
     },
 
+    fosk: {
+        name: "Fosk",
+        number: 75,
+        types: ["Water", "Earth"],
+        abilities: ["Hooked"],
+        sAbility: ["Hydro Powered"],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 66,
+            energy: 57,
+            attack: 70,
+            defense: 65,
+            attackR: 25,
+            defenseR: 50,
+            speed: 67
+        }
+    },
+
+    fosk2ndevo: {
+        name: "Fosk2ndEvo",
+        number: 76,
+        types: ["Water", "Earth"],
+        abilities: ["Hooked"],
+        sAbility: ["Hydro Powered"],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 70,
+            energy: 79,
+            attack: 120,
+            defense: 100,
+            attackR: 25,
+            defenseR: 50,
+            speed: 67
+        }
+    },
+
+    codfin: {
+        name: "Codfin",
+        number: 77,
+        types: ["Water", "Wind"],
+        abilities: ["Hooked"],
+        sAbility: ["Hydro Powered"],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 50,
+            energy: 68,
+            attack: 28,
+            defense: 30,
+            attackR: 70,
+            defenseR: 44,
+            speed: 80
+        }
+    },
+
+    veneray: {
+        name: "Veneray",
+        number: 78,
+        types: ["Water", "Wind"],
+        abilities: ["Hooked"],
+        sAbility: ["Hydro Powered"],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 88,
+            energy: 82,
+            attack: 50,
+            defense: 62,
+            attackR: 98,
+            defenseR: 93,
+            speed: 97
+        }
+    },
+
+    hydrak: {
+        name: "Hydrak",
+        number: 79,
+        types: ["Water", "Mystic"],
+        abilities: ["Hooked"],
+        sAbility: ["Hydro Powered"],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 90,
+            energy: 80,
+            attack: 70,
+            defense: 78,
+            attackR: 90,
+            defenseR: 90,
+            speed: 62
+        }
+    },
+    
+
     mochunny: {
         name: "Mochunny",
         number: 79,
@@ -1420,9 +1665,49 @@ var loomians = {
         }
     },
 
+    mushroom: {
+        name: "Mushroom",
+        number: 91,
+        types: ["Mystic", "Poison"],
+        abilities: ["Mochi Maker"],
+        sAbility: ["Mallet Master"],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 100,
+            energy: 65,
+            attack: 50,
+            defense: 110,
+            attackR: 70,
+            defenseR: 110,
+            speed: 25
+        }
+    },
+
+    gloomirit: {
+        name: "Gloomirit",
+        number: 92,
+        types: ["Ice", "Spirit"],
+        abilities: ["Mochi Maker"],
+        sAbility: ["Mallet Master"],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 85,
+            energy: 82,
+            attack: 115,
+            defense: 84,
+            attackR: 40,
+            defenseR: 76,
+            speed: 78
+        }
+    },
+
     kraboo: {
         name: "Kraboo",
-        number: 99,
+        number: 93,
         types: ["Water", "Metal"],
         abilities: ["Exoskeleton"],
         sAbility: ["Surprise"],
@@ -1442,8 +1727,48 @@ var loomians = {
 
     miralo: {
         name: "Miralo",
-        number: 999,
+        number: 95,
         types: ["Light", "Wind"],
+        abilities: ["Sudden Breeze"],
+        sAbility: ["Reflector"],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 83,
+            energy: 96,
+            attack: 48,
+            defense: 68,
+            attackR: 115,
+            defenseR: 93,
+            speed: 86
+        }
+    },
+
+    mirasa: {
+        name: "Mirasa",
+        number: 96,
+        types: ["Light", "Water"],
+        abilities: ["Sudden Breeze"],
+        sAbility: ["Reflector"],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 83,
+            energy: 96,
+            attack: 48,
+            defense: 68,
+            attackR: 115,
+            defenseR: 93,
+            speed: 86
+        }
+    },
+
+    mirama: {
+        name: "Mirama",
+        number: 97,
+        types: ["Light", "Lightning"],
         abilities: ["Sudden Breeze"],
         sAbility: ["Reflector"],
         finalEvo: true,
@@ -1462,7 +1787,7 @@ var loomians = {
 
     chester: {
         name: "Chester",
-        number: 1000,
+        number: 98,
         types: ["Dark", "Spirit"],
         abilities: [""],
         sAbility: [""],
@@ -1948,6 +2273,7 @@ var moves = {
         mr: "Melee",
         mr1: "Melee Attack",
         mr2: "Melee Defense",
+        hits: true,
     },
                 
     bugBap:{
@@ -2061,8 +2387,8 @@ var moves = {
         mr2: "Melee Defense",
     },
                 
-    chainSwing:{
-        name: "Chain Swing",
+    chainFlail:{
+        name: "Chain Flail",
         power:  75,
         energy: 0,
         accuracy: 100,
@@ -2405,17 +2731,6 @@ var moves = {
         mr2: "Ranged Defense",
     },
                 
-    harpoon:{
-        name: "Harpoon",
-        power:  35,
-        energy: 0,
-        accuracy: 90,
-        type: "Metal",
-        mr: "Ranged",
-        mr1: "Ranged Attack",
-        mr2: "Ranged Defense",
-    },
-                
     magicSphere:{
         name: "Magic Sphere",
         power:  60,
@@ -2469,6 +2784,7 @@ var moves = {
         mr: "Ranged",
         mr1: "Ranged Attack",
         mr2: "Ranged Defense",
+        hits: true,
     },
                 
     waterGush:{
@@ -2547,6 +2863,143 @@ var moves = {
         mr1: "Melee Attack",
         mr2: "Melee Defense",
     },
+
+    balancingBeam:{
+        name: "Balancing Beam",
+        power:  70,
+        energy: 0,
+        accuracy: 100,
+        type: "Balance",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+    },
+
+    slingShot:{
+        name: "Sling Shot",
+        power:  65,
+        energy: 45,
+        accuracy: 100,
+        type: "Balance",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+    },
+    
+    hailHurl:{
+        name: "Hail Hurl",
+        power:  70,
+        energy: 0,
+        accuracy: 100,
+        type: "Ice",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+    },
+
+    zap:{
+        name: "Zap",
+        power:  40,
+        energy: 0,
+        accuracy: 100,
+        type: "Lightning",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+    },
+
+    harpoon:{
+        name: "Harpoon",
+        power:  35,
+        energy: 0,
+        accuracy: 90,
+        type: "Metal",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+    },
+
+    frighten:{
+        name: "Frighten",
+        power:  40,
+        energy: 40,
+        accuracy: 100,
+        type: "Spirit",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+    },
+
+    fanOut:{
+        name: "Fan Out",
+        power:  55,
+        energy: 0,
+        accuracy: "N/A",
+        type: "Wind",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+    },
+
+    baneBite:{
+        name: "Bane Bite",
+        power:  60,
+        energy: 0,
+        accuracy: 100,
+        type: "Dark",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        bite: true,
+    },
+
+    tase:{
+        name: "Tase",
+        power:  60,
+        energy: 0,
+        accuracy: 100,
+        type: "Lightning",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+    },
+
+    jumpScare:{
+        name: "Jump Scare",
+        power:  40,
+        energy: 0,
+        accuracy: 100,
+        type: "Spirit",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+    },
+
+    'splish-splash':{
+        name: "Splish-Splash",
+        power:  40,
+        energy: 0,
+        accuracy: 100,
+        type: "Water",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        hits: true,
+    },
+
+    barkBite:{
+        name: "Bark Bite",
+        power:  60,
+        energy: 0,
+        accuracy: 100,
+        type: "Wood",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        bite: true,
+    },
+
+
     
     
 
@@ -2858,7 +3311,7 @@ var moves = {
         mr: "Support"
     }, 
 
-    barkkBarrier: {
+    barkBarrier: {
         name: "Bark Barrier",
         power: 0,
         energy: 0,
@@ -2873,6 +3326,60 @@ var moves = {
         energy: 0,
         accuracy: "N/A",
         type: "Wood",
+        mr: "Support"
+    }, 
+
+    cosmicInsight: {
+        name: "Cosmic Insight",
+        power: 0,
+        energy: 0,
+        accuracy: "N/A",
+        type: "Cosmic",
+        mr: "Support"
+    }, 
+
+    rubbleRain: {
+        name: "Rubble Rain",
+        power: 0,
+        energy: 0,
+        accuracy: "N/A",
+        type: "Earth",
+        mr: "Support"
+    }, 
+
+    fireUp: {
+        name: "Fire Up",
+        power: 0,
+        energy: 0,
+        accuracy: "N/A",
+        type: "Fire",
+        mr: "Support"
+    }, 
+
+    expertiseExchange: {
+        name: "Expertise Exchange",
+        power: 0,
+        energy: 0,
+        accuracy: "N/A",
+        type: "Mystic",
+        mr: "Support"
+    }, 
+    
+    roar: {
+        name: "Roar",
+        power: 0,
+        energy: 0,
+        accuracy: "N/A",
+        type: "Sound",
+        mr: "Support"
+    }, 
+
+    denseFog: {
+        name: "Dense Fog",
+        power: 0,
+        energy: 0,
+        accuracy: "N/A",
+        type: "Wind",
         mr: "Support"
     }, 
 
@@ -3159,16 +3666,16 @@ var typeModAbilities = {
 //var items = ["Heavy Shield", "Heavy Armor", "Power Cuffs", "Health Amulet", "Drain Orb", "Mystic Wand", "Drop of Youth", "Energy Orb", "Chocolate Bar", "Mysterious Dust", "Heavy Shackles", "Thunder Orb",
          //    "Volcanic Ash", "Rageful Plushie", "Clutch Plushie", "Specialty Boots", "Milkshake", "Kabunga Coffee"];
 
-var items = ["Testing Item", "Power Gauntlet", "Power Fang", "Golden Lock"] //, "Soothing Leaf", "Metal Coat", "Mystic Scale", "Relaxed Herb"
+var items = ["Testing Item", "Power Gauntlet", "Power Fang", "Golden Lock", "Siphon Seed", "Barbed Hook", "Soothing Leaf", "Metal Coat", "Mystic Scale", "Enchanted Orb", "Swift Mochi", "Muscle Mochi", "Fish Oil", "Remedy Mochi", "Magical Mochi", "Resist Mochi", "Clutch Mochi", "Heal Mochi", "Power Mochi", "Monocle", "Splinter Shield", "Sharp Feather", "Harloops", "Relaxed Herb"]
 
-var relics = ["Trap Relic", "Remover Relic", "Pivot Relic", "Terrain Relic"]
-//for (let ty in types) {
-     // items.push(ty.charAt(0).toUpperCase() + ty.slice(1) + " Bracelet");
-     // items.push(ty.charAt(0).toUpperCase() + ty.slice(1) + " Pendant");
+var relics = ["Trap Relic", "Remover Relic", "Pivot Relic", "Terrain Relic", "Heal Relic", "Cure Relic"]
+for (let ty in types) {
+      items.push(ty.charAt(0).toUpperCase() + ty.slice(1) + " Bracelet");
+      items.push(ty.charAt(0).toUpperCase() + ty.slice(1) + " Pendant");
       //items.push(types[ty].otherName.charAt(0).toUpperCase() + types[ty].otherName.slice(1) + " Pearl");
   //  items.push(types[ty].otherName.charAt(0).toUpperCase() + types[ty].otherName.slice(1) + " Shell");
-//}
+}
 
 var sets = [];
-
-var changelog = "";
+//fix muscle mochi and enegry drain on siphon seed
+var changelog = "";//   (mochis? splinter shield? check dw dmg calc and mons dmg calc!)
