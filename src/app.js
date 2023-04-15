@@ -454,6 +454,7 @@ function loadDropdowns() {
     abilities.sort();
     items.sort();
     relics.sort();
+    terrains.sort();
     console.log(loomians);
     for (let loom in loomians) {
         let optG1 = document.createElement("optgroup");
@@ -497,7 +498,12 @@ function loadDropdowns() {
         relic1.options[relic1.options.length] = new Option(relics[relic]);
         relic2.options[relic2.options.length] = new Option(relics[relic]);
     }
-
+    for (let terrain in terrains) {
+        terrain1.options[terrain1.options.length] = new Option(terrains[terrain]);
+        terrain2.options[terrain2.options.length] = new Option(terrains[terrain]);
+        terrain3.options[terrain3.options.length] = new Option(terrains[terrain]);
+        terrain4.options[terrain4.options.length] = new Option(terrains[terrain]);
+    }
     moveNames.sort();
 
     for (let move in moveNames) {
