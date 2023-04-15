@@ -189,6 +189,8 @@ let relic2 = document.getElementById("relic2");
 
 let terrain1 = document.getElementById("terrain1");
 let terrain2 = document.getElementById("terrain2");
+let terrain3 = document.getElementById("terrain3");
+let terrain4 = document.getElementById("terrain4");
 
 let sapPlant1 = document.getElementById("sapPlant1");
 let sapPlant2 = document.getElementById("sapPlant2");
@@ -1118,8 +1120,8 @@ function loadStats() {
     statDefR1.innerHTML = Math.floor(defR1 * multi);
     multi = 1;
     if (firstItem == "Specialty Boots") multi *= 1.5;
-    if (terrain1.value == "Jet Stream") multi *= 2;
-    if (terrain1.value == "Thunderstorm") multi *= 0.5;
+    if (terrain1.value == "Jet Stream" || terrain3.value  == "Jet Stream") multi *= 2;
+    if (terrain1.value == "Thunderstorm" || terrain3.value == "Thunderstorm") multi *= 0.5;
     if (status1.value == "paralasis" && !firstLoom.types.includes("Electric") && ability1 != "Thriving Pace") multi *= 0.5;
     if (ability1 == "Thriving Pace" && status1.value != "healthy") multi *= 1.5;
     else if (ability1 == "Sugar Rush" && firstItem == "None") multi *= 2;
@@ -1148,8 +1150,8 @@ function loadStats() {
     statDefR2.innerHTML = Math.floor(defR2 * multi);
     multi = 1;
     if (secondItem == "Specialty Boots") multi *= 1.5;
-    if (terrain2.value == "Jet Stream") multi *= 2;
-     if (terrain2.value == "Thunderstorm") multi *= 2;
+    if (terrain2.value == "Jet Stream" || terrain4.value == "Jet Stream") multi *= 2;
+     if (terrain2.value == "Thunderstorm" || terrain4.value == "Thunderstorm") multi *= 2;
     if (status2.value == "paralasis" && !secondLoom.types.includes("Electric") && ability2 != "Thriving Pace") multi *= 0.5;
     if (ability2 == "Thriving Pace" && status2.value != "healthy") multi *= 1.5;
     else if (ability2 == "Sugar Rush" && secondItem == "None") multi *= 2;
@@ -1402,6 +1404,8 @@ function checkEnergy(moveOne1, moveTwo1, moveThree1, moveFour1, moveOne2, moveTw
     let itemA = item1.value;
     let terrainA = terrain1.value;
     let terrainB = terrain2.value;
+    let terrainC = terrain3.value;
+    let terrainD  = terrain4.value;
     let itemB = item2.value;
     let movesEnergy1 = [moveOne1.energy, moveTwo1.energy, moveThree1.energy, moveFour1.energy];
     let movesEnergy2 = [moveOne2.energy, moveTwo2.energy, moveThree2.energy, moveFour2.energy];
@@ -1569,6 +1573,8 @@ function calculateDamage(moveOne1, moveTwo1, moveThree1, moveFour1, moveOne2, mo
     let itemB = item2.value;
     let terrainA = terrain1.value;
     let terrainB = terrain2.value;
+    let terrainC = terrain3.value;
+    let terrainD = terrain4.value;
 
     let critOne1 = moveOneCrit1.checked;
     let critTwo1 = moveTwoCrit1.checked;
@@ -2237,6 +2243,8 @@ function getMultiplier(loom1, loom2, move, movePower, crit, level, ul = false, s
     let itemB = (second == false ? item2.value : item1.value);
     let terrainA = (second == false ? terrain1.value : terrain2.value);
     let terrainB = (second == false ? terrain2.value : terrain1.value);
+    let terrainC = (second == false ? terrain3.value : terrain4.value);
+    let terrainD = (second == false ? terrain4.value : terrain3.value);
     let tempItem;
     let isDouble = (singleDouble.value == "singles" ? false : true);
     //let dusk = (second == false ? dusk1.checked : dusk2.checked);
@@ -2325,11 +2333,11 @@ function getMultiplier(loom1, loom2, move, movePower, crit, level, ul = false, s
         stuffUsed.ability2 = ability2;
     }
 
-    if (terrain2.value == "Spirit Thing") {
+    if (terrain2.value == "Spirit Thing" || terrain4.value == "Spirit Thing") {
         itemB = "None";
         stuffUsed.weather = " in Spirit Thing";
     }
-    if (terrain1.value == "Spirit Thing") {
+    if (terrain1.value == "Spirit Thing" || terrain3.value == "Spirit Thing") {
         itemA = "None";
         stuffUsed.weather = " in Spirit Thing";
     }
@@ -2523,10 +2531,10 @@ function getMultiplier(loom1, loom2, move, movePower, crit, level, ul = false, s
     }
 
     //moves do more damage in that terrain/weather
-    if (acidRain.checked && tempType == "Poison") {
-        multi *= 1.25;
-        stuffUsed.weather += " in Acid Rain";
-    }
+  //  if (acidRain.checked && tempType == "Poison") {
+    //    multi *= 1.25;
+      //  stuffUsed.weather += " in Acid Rain";
+    //}
     
 
     if (itemB != "None" && move.knockOff == true && (withoutSlapDown || ability2 == "Clingy")) {
@@ -2822,22 +2830,22 @@ function getMultiplier(loom1, loom2, move, movePower, crit, level, ul = false, s
         stuffUsed.ability1 = ability1;
     }
 
-    if (terrainB == "Earth Veil" && effectiveness > 1) {
+    if ((terrainB == "Earth Veil" || terrainD == "Earth Veil") && effectiveness > 1) {
         multi *= 0.75;
         stuffUsed.weather += " in Earth Veil";
     }
 
-    if (terrainA == "Force Thing" && effectiveness < 1) {
+    if ((terrainA == "Force Thing" || terrainC == "Force Thing") && effectiveness < 1) {
         multi *= 2;
         stuffUsed.weather += " in Force Thing";
     }
 
-    if (terrainB == "Metal Thing" && move.mr == "Melee") {
+    if ((terrainB == "Metal Thing" || terrainD == "Metal Thing") && move.mr == "Melee") {
         multi *= 0.75;
         stuffUsed.weather += " in Metal Thing";
     }
 
-    if (terrainB == "Cosmic Thing" && move.mr == "Ranged") {
+    if ((terrainB == "Cosmic Thing" || terrainD == "Cosmic Thing") && move.mr == "Ranged") {
         multi *= 0.75;
         stuffUsed.weather += " in Cosmic Thing";
     }
@@ -3141,7 +3149,9 @@ function adjustHP(loom1, loom2, hp1, hp2, item, ability, status, second = false,
     let buzzolen = buzzolen2.checked;
     let softWater = softWater2.checked;
     let terrain = terrain2.value;
+    let terrainGroupTwo = terrain4.value;
     let wicked = { attacker: terrain1.value == "Wicked Weeds" ? true : false, defender: terrain2.value == "Wicked Weeds" ? true : false };
+    let wicked2 = { attacker: terrain3.value == "Wicked Weeds" ? true : false, defender: terrain4.value == "Wicked Weeds" ? true : false };
     let hazardString = "";
 
     if (second) {
@@ -3150,10 +3160,12 @@ function adjustHP(loom1, loom2, hp1, hp2, item, ability, status, second = false,
         barb = barbs[0];
         sap = { attacker: sapPlant2.checked, defender: sapPlant1.checked };
         wicked = { attacker: terrain2.value == "Wicked Weeds" ? true : false, defender: terrain1.value == "Wicked Weeds" ? true : false };
+        wicked2 = { attacker: terrain4.value == "Wicked Weeds" ? true : false, defender: terrain3.value == "Wicked Weeds" ? true : false };
         //bloodDrain = { attacker: bloodDrain2.checked, defender: bloodDrain1.checked };
         pestilence = pestilence1.checked;
         quicksand = quicksand1.checked;
         terrain = terrain1.value;
+        terrainGroupTwo = terrain3.value;
         buzzolen = buzzolen1.checked;
         softWater = softWater1.checked;
     }
@@ -3284,7 +3296,7 @@ function adjustHP(loom1, loom2, hp1, hp2, item, ability, status, second = false,
     
     let otherAbility = (second ? abilities.find((x) => x == abilityDropdown2.value) : abilities.find((x) => x == abilityDropdown1.value));
     if (status == "burned" && !loom2.types.includes("Fire") && ability != "Aqua Body") {
-        if (terrain == "Fire Thing") {
+        if (terrain == "Fire Thing" || terrainGroupTwo == "Fire Thing") {
             newHP += Math.floor(hp1 * 1 / 8);
             hazardString += "burn damage and ";
         } else {
@@ -3295,7 +3307,7 @@ function adjustHP(loom1, loom2, hp1, hp2, item, ability, status, second = false,
     }
 
     if (status == "frostbitten" && !loom2.types.includes("Ice")) {
-        if (terrain == "Snowstorm") {
+        if (terrain == "Snowstorm" || terrainGroupTwo == "Snowstorm") {
             newHP += Math.floor(hp1 * 1 / 8);
             hazardString += "frostbite damage and ";
         } else {
@@ -3305,25 +3317,25 @@ function adjustHP(loom1, loom2, hp1, hp2, item, ability, status, second = false,
        
     }
 
-    if (acidRain.checked && !loom2.types.includes("Poison")) {
-        newHP += Math.floor(hp1 * 1 / 16);
-        hazardString += "acid rain damage and ";
-    }
+   // if (acidRain.checked && !loom2.types.includes("Poison")) {
+       // newHP += Math.floor(hp1 * 1 / 16);
+       // hazardString += "acid rain damage and ";
+   // }
 
 
 
 
-    if (terrain == "Fire Thing" && !loom2.types.includes("Fire")) {
+    if ((terrain == "Fire Thing" || terrainGroupTwo == "Fire Thing") && !loom2.types.includes("Fire")) {
         newHP += Math.floor(hp1 * 1 / 16);
         hazardString += "fire thing damage and ";
     }
 
-    if (terrain == "Snowstorm" && !loom2.types.includes("Ice")) {
+    if ((terrain == "Snowstorm" || terrainGroupTwo == "Snowstorm") && !loom2.types.includes("Ice")) {
         newHP += Math.floor(hp1 * 1 / 16);
         hazardString += "snowstorm damage and ";
     }
 
-    if (terrain == "Smog" && !loom2.types.includes("Poison")) {
+    if ((terrain == "Smog" || terrainGroupTwo == "Smog") && !loom2.types.includes("Poison")) {
         newHP += Math.floor(hp1 * 1 / 16);
         hazardString += "smog damage and ";
     }
