@@ -3669,6 +3669,8 @@ var typeModAbilities = {
 var items = ["Testing Item", "Power Gauntlet", "Power Fang", "Golden Lock", "Siphon Seed", "Barbed Hook", "Soothing Leaf", "Metal Coat", "Mystic Scale", "Enchanted Orb", "Swift Mochi", "Muscle Mochi", "Fish Oil", "Remedy Mochi", "Magical Mochi", "Resist Mochi", "Clutch Mochi", "Heal Mochi", "Power Mochi", "Monocle", "Splinter Shield", "Sharp Feather", "Harloops", "Relaxed Herb"]
 
 var relics = ["Trap Relic", "Remover Relic", "Pivot Relic", "Terrain Relic", "Heal Relic", "Cure Relic"]
+var terrains = ["Wicked Weeds", "Earth Veil", "Water Wall", "Fire Thing", "Metal Thing", "Jet Stream", "Smog", "Snowstorm", "Thunderstorm", "Force Thing", "Dark Thing", "Light Thing", "Spirit Thing", "Cosmic Thing", "Balance Thing", "Insect Thing", "Mystic Thing", "Sound Thing"]
+
 for (let ty in types) {
       items.push(ty.charAt(0).toUpperCase() + ty.slice(1) + " Bracelet");
       items.push(ty.charAt(0).toUpperCase() + ty.slice(1) + " Pendant");
