@@ -3059,6 +3059,162 @@ var moves = {
         bite: true,
     },
 
+     blast:{
+        name: "Blast",
+        power:  50,
+        energy: 60,
+        accuracy: 100,
+        type: "Balance",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+        blast: true,
+    },
+
+    secludedSurge:{
+        name: "Secluded Surge",
+        power:  60,
+        energy: 75,
+        accuracy: 100,
+        type: "Dark",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+    },
+
+    flashingFlare:{
+        name: "Flashing Flare",
+        power:  60,
+        energy: 75,
+        accuracy: 100,
+        type: "Fire",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+    },
+
+    palmarPulse:{
+        name: "Palmar Pulse",
+        power:  60,
+        energy: 40,
+        accuracy: 100,
+        type: "Force",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+    },
+
+    slushSlap:{
+        name: "Slush Slap",
+        power:  40,
+        energy: 40,
+        accuracy: 100,
+        type: "Ice",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+    },
+
+    cannonball:{
+        name: "Cannonball",
+        power:  40,
+        energy: 40,
+        accuracy: 100,
+        type: "Metal",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+    },
+
+    summoningSpell:{
+        name: "Summoning Spell",
+        power:  75,
+        energy: 95,
+        accuracy: 100,
+        type: "Mystic",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Melee Defense",
+    },
+
+    occultOrb:{
+        name: "Occult Orb",
+        power:  60,
+        energy: 75,
+        accuracy: 100,
+        type: "Mystic",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+    },
+
+    dragonsFury:{
+        name: "Dragons Fury",
+        power:  25,
+        energy: 80,
+        accuracy: 100,
+        type: "Mystic",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+        hits: true,
+    },
+
+    shadowShot:{
+        name: "Shadow Shot",
+        power:  60,
+        energy: 75,
+        accuracy: 100,
+        type: "Spirit",
+        mr: "Ranged",
+        mr1: "Ranged Attack",
+        mr2: "Ranged Defense",
+    },
+
+     cycloneSlash:{
+        name: "Cyclone Slash",
+        power:  70,
+        energy: 85,
+        accuracy: 100,
+        type: "Wind",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+    },
+
+    fungalFang:{
+        name: "Fungal Fang",
+        power:  50,
+        energy: 45,
+        accuracy: 100,
+        type: "Wood",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+    },
+
+    brushBlade:{
+        name: "Brush Blade",
+        power:  70,
+        energy: 85,
+        accuracy: 100,
+        type: "Wood",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+    },
+
+    pinePunch:{
+        name: "Pine Punch",
+        power:  65,
+        energy: 80,
+        accuracy: 100,
+        type: "Wood",
+        mr: "Melee",
+        mr1: "Melee Attack",
+        mr2: "Melee Defense",
+    },
+
 
     
     
@@ -3101,6 +3257,15 @@ var moves = {
         mr: "Support"
     },
 
+    combatantsCry: {
+        name: "Combatants Cry",
+        power: 0,
+        energy: 60,
+        accuracy: 100,
+        type: "Sound",
+        mr: "Support"
+    },
+
     startle: {
         name: "Startle",
         power: 0,
@@ -3116,6 +3281,15 @@ var moves = {
         energy: 25,
         accuracy: "N/A",
         type: "Earth",
+        mr: "Support"
+    },
+
+     waterDown: {
+        name: "Water Down",
+        power: 0,
+        energy: 50,
+        accuracy: "N/A",
+        type: "Water",
         mr: "Support"
     },
 
@@ -3146,6 +3320,24 @@ var moves = {
         mr: "Support"
     },
 
+    shiverShell: {
+        name: "Shiver Shell",
+        power: 0,
+        energy: 60,
+        accuracy: "N/A",
+        type: "Ice",
+        mr: "Support"
+    },
+
+     overCharge: {
+        name: "Over Charge",
+        power: 0,
+        energy: 60,
+        accuracy: "N/A",
+        type: "Lightning",
+        mr: "Support"
+    },
+
     waterWall: {
         name: "Water Wall",
         power: 0,
@@ -3161,6 +3353,15 @@ var moves = {
         energy: 50,
         accuracy: "N/A",
         type: "Wood",
+        mr: "Support"
+    },
+
+    hurryUp: {
+        name: "Hurry Up",
+        power: 0,
+        energy: 35,
+        accuracy: "N/A",
+        type: "Balance",
         mr: "Support"
     },
 
