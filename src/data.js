@@ -1705,6 +1705,46 @@ var loomians = {
         }
     },
 
+     snole: {
+        name: "Snole",
+        number: 93,
+        types: ["Ice", "Earth"],
+        abilities: ["Uncertain"],
+        sAbility: ["Gold Digger"],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 80,
+            energy: 54,
+            attack: 64,
+            defense: 80,
+            attackR: 54,
+            defenseR: 64,
+            speed: 54
+        }
+    },
+
+     moulder: {
+        name: "Moulder",
+        number: 93,
+        types: ["Ice", "Earth"],
+        abilities: ["Uncertain"],
+        sAbility: ["Gold Digger"],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 100,
+            energy: 64,
+            attack: 84,
+            defense: 100,
+            attackR: 64,
+            defenseR: 84,
+            speed: 64
+        }
+    },
+
     kraboo: {
         name: "Kraboo",
         number: 93,
@@ -1739,9 +1779,9 @@ var loomians = {
             energy: 96,
             attack: 48,
             defense: 68,
-            attackR: 115,
-            defenseR: 93,
-            speed: 86
+            attackR: 110,
+            defenseR: 99,
+            speed: 96
         }
     },
 
@@ -1755,13 +1795,13 @@ var loomians = {
         weight: 00,
         height: 00,
         baseStats: {
-            hp: 83,
-            energy: 96,
-            attack: 48,
-            defense: 68,
-            attackR: 115,
-            defenseR: 93,
-            speed: 86
+            hp: 103,
+            energy: 76,
+            attack: 68,
+            defense: 91,
+            attackR: 90,
+            defenseR: 96,
+            speed: 76
         }
     },
 
@@ -1775,13 +1815,13 @@ var loomians = {
         weight: 00,
         height: 00,
         baseStats: {
-            hp: 83,
-            energy: 96,
-            attack: 48,
-            defense: 68,
-            attackR: 115,
-            defenseR: 93,
-            speed: 86
+            hp: 63,
+            energy: 86,
+            attack: 130,
+            defense: 83,
+            attackR: 58,
+            defenseR: 64,
+            speed: 116
         }
     },
 
@@ -1795,13 +1835,33 @@ var loomians = {
         weight: 00,
         height: 00,
         baseStats: {
-            hp: 94,
+            hp: 100,
             energy: 90,
-            attack: 94,
+            attack: 100,
             defense: 100,
-            attackR: 71,
-            defenseR: 63,
-            speed: 88
+            attackR: 60,
+            defenseR: 60,
+            speed: 87
+        }
+    },
+
+    morphu: {
+        name: "Morphu",
+        number: 99,
+        types: ["Ice", "Spirit"],
+        abilities: [""],
+        sAbility: [""],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 85,
+            energy: 82,
+            attack: 100,
+            defense: 84,
+            attackR: 55,
+            defenseR: 76,
+            speed: 78
         }
     },
 
