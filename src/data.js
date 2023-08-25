@@ -519,6 +519,47 @@ var loomians = {
         }
     },
 
+    manfu: {
+        name: "Manfu",
+        number: 26,
+        types: ["Insect"],
+        abilities: ["Scout"],
+        sAbility: ["Quick Footed"],
+        finalEvo: false,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 31,
+            energy: 60,
+            attack: 76,
+            defense: 34,
+            attackR: 23,
+            defenseR: 30,
+            speed: 86
+        }
+    },
+
+    medimantis: {
+        name: "Medimantis",
+        number: 26,
+        types: ["Insect", "Force"],
+        abilities: ["Scout"],
+        sAbility: ["Quick Footed"],
+        finalEvo: true,
+        weight: 00,
+        height: 00,
+        baseStats: {
+            hp: 51,
+            energy: 89,
+            attack: 122,
+            defense: 48,
+            attackR: 43,
+            defenseR: 125,
+            speed: 125
+        }
+    },
+    
+
     
 
     nymon: {
@@ -3927,7 +3968,7 @@ var typeModAbilities = {
 //var items = ["Heavy Shield", "Heavy Armor", "Power Cuffs", "Health Amulet", "Drain Orb", "Mystic Wand", "Drop of Youth", "Energy Orb", "Chocolate Bar", "Mysterious Dust", "Heavy Shackles", "Thunder Orb",
          //    "Volcanic Ash", "Rageful Plushie", "Clutch Plushie", "Specialty Boots", "Milkshake", "Kabunga Coffee"];
 
-var items = ["Testing Item", "Power Gauntlet", "Power Fang", "Golden Lock", "Siphon Seed", "Barbed Hook", "Soothing Leaf", "Metal Coat", "Mystic Scale", "Enchanted Orb", "Swift Mochi", "Muscle Mochi", "Fish Oil", "Remedy Mochi", "Magical Mochi", "Resist Mochi", "Clutch Mochi", "Heal Mochi", "Power Mochi", "Monocle", "Splinter Shield", "Sharp Feather", "Harloops", "Relaxed Herb"]
+var items = ["Glad Mirror", "Sad Mirror", "Mad Mirror", "Testing Item", "Power Gauntlet", "Hero's Sword", "Golden Lock", "Siphon Seed", "Barbed Hook", "Sap Seed", "Metal Coat", "Mystic Scale", "Hero's Bow", "Swift Mochi", "Muscle Mochi", "Fish Oil", "Remedy Mochi", "Magical Mochi", "Resist Mochi", "Clutch Mochi", "Heal Mochi", "Power Mochi", "Monocle", "Splinter Shield", "Sharp Claws", "Harloops", "Relaxed Herb"]
 
 var relics = ["Trap Relic", "Remover Relic", "Pivot Relic", "Terrain Relic", "Heal Relic", "Cure Relic"]
 var terrains = ["Wicked Weeds", "Earth Veil", "Water Wall", "Fire Thing", "Metal Thing", "Jet Stream", "Smog", "Snowstorm", "Thunderstorm", "Force Thing", "Dark Thing", "Light Thing", "Spirit Thing", "Cosmic Thing", "Balance Thing", "Insect Thing", "Mystic Thing", "Sound Thing"]
