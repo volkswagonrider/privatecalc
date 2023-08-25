@@ -2521,12 +2521,12 @@ function getMultiplier(loom1, loom2, move, movePower, crit, level, ul = false, s
         stuffUsed.item1 = itemA;
     }
 
-    if ((itemA == "Power Fang" && move.mr == "Melee")) {
+    if ((itemA == "Hero's Sword" && move.mr == "Melee")) {
         multi *= 1.1;
         stuffUsed.item1 = itemA;
     }
 
-    if ((itemA == "Enchanted Orb" && move.mr == "Ranged")) {
+    if ((itemA == "Hero's Bow" && move.mr == "Ranged")) {
         multi *= 1.1;
         stuffUsed.item1 = itemA;
     }
@@ -2928,7 +2928,7 @@ function getMultiplier(loom1, loom2, move, movePower, crit, level, ul = false, s
     //if (move.grounded && loom2.levitate && !smacked) multi *= 0;
 
     stuffUsed.item2 = (itemB == "Health Amulet" ? itemB : stuffUsed.item2);
-    stuffUsed.item2 = (itemB == "Soothing Leaf" || itemB == "Siphon Seed" ? itemB : stuffUsed.item2);
+    stuffUsed.item2 = (itemB == "Sap Seed" || itemB == "Siphon Seed" ? itemB : stuffUsed.item2);
 
     if (ability1 == "Double Strike" && !foulHit && !(isDouble && move.aoe == true) && !move.hits) {
         if (detailed) {
@@ -3276,7 +3276,7 @@ function adjustHP(loom1, loom2, hp1, hp2, item, ability, status, second = false,
             hazardString += "health amulet recovery and ";
         }
 
-        if (item == "Soothing Leaf") {
+        if (item == "Sap Seed") {
             
             if (ability == "Sapper") {
                 newHP -= Math.floor(hp1 * 1 / 16 * 1.25);
@@ -3284,7 +3284,7 @@ function adjustHP(loom1, loom2, hp1, hp2, item, ability, status, second = false,
                 newHP -= Math.floor(hp1 * 1 / 16);
             }
            
-            hazardString += "soothing leaf recovery and ";
+            hazardString += "sap seed recovery and ";
         }
 
         if (item == "Barbed Hook") {
